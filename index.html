@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosIA.css">
+    <title>Mi Jardín</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#quien-soy">Quién Soy</a></li>
+                <li><a href="#enunciado">Enunciado</a></li>
+                <li>
+                    <fieldset id="categorias">
+                        <legend><a href="#plantas">Categoría:</a></legend>
+                        <label class="label-nav">Interior<input type="checkbox" name="categoria" value="interior" class="nav-cajita"></label>
+                        <label class="label-nav">Exterior<input type="checkbox" name="categoria" value="exterior" class="nav-cajita"></label>
+                    </fieldset>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="titulos-secciones">Contacto</div>
+    <section id="contacto">
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <div class="titulos-secciones">Quién Soy</div>
+    <section id="quien-soy">
+        <p>Matías Adorno, estudiante de informática, actualmente cursando Proyecto de Software.</p>
+    </section>
+    <div class="titulos-secciones">Plantas</div>
+    <section id="plantas">  
+        <div class="planta-card interior">
+            <img src="imagenes/pata-de-elefante.jpg" alt="Pata de elefante">
+            <p class="titulo-card">Pata de elefante</p>
+            <a href="info/pata-de-elefante.pdf" download>Más Información (PDF)</a>
+        </div>
+        <div class="planta-card interior">
+            <img src="imagenes/aloe-vera.jpg" alt="Aloe vera">
+            <p class="titulo-card">Aloe vera</p>
+            <a href="info/aloe-vera.pdf" download>Más Información (PDF)</a>
+        </div>
+        <div class="planta-card interior">
+            <img src="imagenes/sansevieria.jpg" alt="sansevieria">
+            <p class="titulo-card">Sansevieria</p>
+            <a href="info/sansevieria.pdf" download>Más Información (PDF)</a>
+        </div>
+        <div class="planta-card exterior">
+            <img src="imagenes/margarita.jpg" alt="Margarita">
+            <p class="titulo-card">Margarita</p>
+            <a href="info/margarita.pdf" download>Más Información (PDF)</a>
+        </div>
+        <div class="planta-card exterior">
+            <img src="imagenes/rosa.jpg" alt="rosa">
+            <p class="titulo-card">Rosa</p>
+            <a href="info/rosa.pdf" download>Más Información (PDF)</a>
+        </div>
+        <div class="planta-card exterior">
+            <img src="imagenes/petunias.jpg" alt="Petunias">
+            <p class="titulo-card">Petunias</p>
+            <a href="info/petunias.pdf" download>Más Información (PDF)</a>
+        </div>
+    </section>
+    <section id="enunciado">
+        <p class="enunciado"><a href="#imagen-enunciado">ACTIVIDAD 1 - PROYECTO DE SOFTWARE</a></p>
+        <div id="imagen-enunciado" class="imagen-enunciado">
+            <img src="imagenes/actividad-enunciado.png" alt="Enunciado">
+            <p class="enunciado"><a href="https://drive.google.com/drive/folders/1gpKnmH83Rj1VD9ynIdN4UOQo0joq00dO?usp=drive_link">Link a los videos</a></p>
+        </div>
+    </section>
+</body>
+</html>
